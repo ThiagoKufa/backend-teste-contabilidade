@@ -1,26 +1,30 @@
 {
-  "name": "back-end",
-  "description": "",
-  "main": "dist/index.js",
-  "directories": {
-    "doc": "doc"
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "strict": true
   },
-  "scripts": {
-    "build": "rimraf dist && tsc",
-    "start": "node dist/index.js",
-    "dev": "nodemon --exec ts-node src/index.ts",
-    "dev:watch": "nodemon src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "@types/node": "^24.3.1",
-    "nodemon": "^3.1.10",
-    "rimraf": "^6.0.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
-  }
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
