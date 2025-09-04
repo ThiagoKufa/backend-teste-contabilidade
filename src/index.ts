@@ -1,18 +1,16 @@
-import { createServer } from 'http';
+import express from 'express'
+import router from './routes';
 
-const PORT = process.env.PORT || 3000;
+process.loadEnvFile('.env')
 
-const server = createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'application/json' });
-  res.end(JSON.stringify({ 
-    message: 'Hello World from TypeScript!',
-    timestamp: new Date().toISOString()
-  }));
-});
+const PORT = process.env.PORT || 3030;
+const app = express()
+app.use(express.json())
 
-server.listen(PORT, () => {
+app.use('/api/v1', router)
+
+app.listen(PORT, () => {
   console.log(`🚀 Server running on port http://localhost:${PORT}`);
   console.log(`📝 Environment: ${process.env.NODE_ENV || 'development'}`);
 });
 
-export default server;
