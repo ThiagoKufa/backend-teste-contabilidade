@@ -13,17 +13,17 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
-model Produto {
-  id           Int      @id @default(autoincrement())
-  nome         String
-  preço        Float
-  estoque      Int
-  data_criacao DateTime @default(now())
+model Product {
+  productId           Int      @id @default(autoincrement()) @map("product_id")
+  name         String
+  price        Int
+  stock        Int
+  createdAt DateTime @default(now()) @map("created_at")
 }
 
-model Cliente {
-  id           Int      @id @default(autoincrement())
-  nome         String
+model Customer {
+  customerId           Int      @id @default(autoincrement()) @map("customer_id")
+  name         String 
   email        String   @unique
-  data_criacao DateTime @default(now())
+  createdAt DateTime @default(now()) @map("created_at") 
 }
