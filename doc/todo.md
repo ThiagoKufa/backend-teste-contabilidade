@@ -1,0 +1,34 @@
+## ✅ Checklist do Teste Técnico
+
+- [] Criar uma **API em Node.js** usando:
+
+  - Node.js puro (`http`) **ou** qualquer biblioteca HTTP (Express, Fastify, etc.)
+
+- [ ] Utilizar **SQLite** como banco de dados
+
+- [ ] Criar duas tabelas no banco:
+
+  - **produtos** → id, nome, preço, estoque, data de criação
+  - **clientes** → id, nome, email, data de criação
+
+- [ ] Implementar rotas de **cadastro**:
+
+  - `POST /produtos` → cadastrar produto
+  - `POST /clientes` → cadastrar cliente
+
+- [ ] Implementar rotas de **consulta**:
+
+  - `GET /produtos` → listar produtos (com paginação ou busca simples)
+  - `GET /produtos/:id` → buscar produto por ID
+  - `GET /clientes` → listar clientes
+  - `GET /clientes/:id` → buscar cliente por ID
+
+- [ ] Regras de **validação**:
+
+  - Produto deve ter nome e preço obrigatórios
+  - Cliente deve ter nome e email obrigatórios
+  - Email de cliente deve ser **único**
+
+- [ ] Entregar junto instruções claras de como rodar a API:
+  - Instalação de dependências (`npm install`)
+  - Execução do projeto (`npm start`)
