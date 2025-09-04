@@ -1,12 +1,12 @@
 ## ✅ Checklist do Teste Técnico
 
-- [] Criar uma **API em Node.js** usando:
+- [x] Criar uma **API em Node.js** usando:
 
   - Node.js puro (`http`) **ou** qualquer biblioteca HTTP (Express, Fastify, etc.)
 
-- [ ] Utilizar **SQLite** como banco de dados
+- [x] Utilizar **SQLite** como banco de dados
 
-- [ ] Criar duas tabelas no banco:
+- [x] Criar duas tabelas no banco:
 
   - **produtos** → id, nome, preço, estoque, data de criação
   - **clientes** → id, nome, email, data de criação
