@@ -11,17 +11,17 @@
   - **produtos** → id, nome, preço, estoque, data de criação
   - **clientes** → id, nome, email, data de criação
 
-- [ ] Implementar rotas de **cadastro**:
+- [x] Implementar rotas de **cadastro**:
 
-  - `POST /produtos` → cadastrar produto [x]
-  - `POST /clientes` → cadastrar cliente [ ]
+  - [x] `POST /produtos` → cadastrar produto 
+  - [x] `POST /clientes` → cadastrar cliente 
 
 - [ ] Implementar rotas de **consulta**:
 
-  - `GET /produtos` → listar produtos (com paginação ou busca simples)
-  - `GET /produtos/:id` → buscar produto por ID
-  - `GET /clientes` → listar clientes
-  - `GET /clientes/:id` → buscar cliente por ID
+  - [x] `GET /produtos` → listar produtos (com paginação ou busca simples)
+  - [x] `GET /produtos/:id` → buscar produto por ID
+  - [ ] `GET /clientes` → listar clientes
+  - [ ] `GET /clientes/:id` → buscar cliente por ID
 
 - [ ] Regras de **validação**:
 
