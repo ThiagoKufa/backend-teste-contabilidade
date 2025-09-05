@@ -1,12 +1,5 @@
 import z from 'zod'
 
-// model Produto {
-//   id           Int      @id @default(autoincrement())
-//   nome         String
-//   preço        Float
-//   estoque      Int
-//   data_criacao DateTime @default(now())
-// }
 const productSchema = z.object({
   productId: z.number().optional(),
   name: z.string(),
