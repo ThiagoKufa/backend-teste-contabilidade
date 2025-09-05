@@ -13,7 +13,9 @@
     "dev:watch": "nodemon src/index.ts",
     "prisma:dev": "npx prisma migrate dev",
     "prisma:generate": "npx prisma generate",
-    "prisma:studio": "npx prisma studio"
+    "prisma:studio": "npx prisma studio",
+    "seed": "ts-node prisma/seed.ts",
+    "db:seed": "npm run seed"
   },
   "keywords": [],
   "author": "Thiago Kufa",
