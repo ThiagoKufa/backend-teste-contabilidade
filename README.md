@@ -1,4 +1,4 @@
-# Backend - Sistema de Contabilidade
+# Backend - teste Contabilidade
 
 API REST desenvolvida em Node.js com TypeScript, Express e Prisma para gerenciamento de produtos e clientes.
 
