@@ -12,3 +12,16 @@ curl -X POST http://localhost:3030/api/v1/produtos \
     "stock": 100
   }'
 ```
+
+
+## Customer Endpoints
+
+### Create Customer
+```bash
+curl -X POST http://localhost:3030/api/v1/clientes \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Nome do Cliente",
+    "email": "cliente@example.com"
+  }'
+```
