@@ -21,9 +21,6 @@ API REST desenvolvida em Node.js com TypeScript, Express e Prisma para gerenciam
 ### 1. Clone o repositório e instale as dependências
 
 ```bash
-# Navegue até a pasta do backend
-cd back-end
-
 # Instale as dependências
 npm install
 ```
