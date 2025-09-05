@@ -20,15 +20,15 @@
 
   - [x] `GET /produtos` → listar produtos (com paginação ou busca simples)
   - [x] `GET /produtos/:id` → buscar produto por ID
-  - [ ] `GET /clientes` → listar clientes
-  - [ ] `GET /clientes/:id` → buscar cliente por ID
+  - [x] `GET /clientes` → listar clientes
+  - [x] `GET /clientes/:id` → buscar cliente por ID
 
-- [ ] Regras de **validação**:
+- [x] Regras de **validação**:
 
   - Produto deve ter nome e preço obrigatórios
   - Cliente deve ter nome e email obrigatórios
   - Email de cliente deve ser **único**
 
-- [ ] Entregar junto instruções claras de como rodar a API:
+- [x] Entregar junto instruções claras de como rodar a API:
   - Instalação de dependências (`npm install`)
   - Execução do projeto (`npm start`)
