@@ -13,8 +13,8 @@
 
 - [ ] Implementar rotas de **cadastro**:
 
-  - `POST /produtos` → cadastrar produto
-  - `POST /clientes` → cadastrar cliente
+  - `POST /produtos` → cadastrar produto [x]
+  - `POST /clientes` → cadastrar cliente [ ]
 
 - [ ] Implementar rotas de **consulta**:
 
