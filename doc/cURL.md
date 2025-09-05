@@ -13,6 +13,18 @@ curl -X POST http://localhost:3030/api/v1/produtos \
   }'
 ```
 
+### List Products
+```bash
+curl -X GET http://localhost:3030/api/v1/produtos
+```
+### Pagination
+```bash
+curl -X GET http://localhost:3030/api/v1/produtos?page=1&limit=10
+```
+### Get Product by ID
+```bash
+curl -X GET http://localhost:3030/api/v1/produtos/1
+```
 
 ## Customer Endpoints
 
@@ -25,3 +37,4 @@ curl -X POST http://localhost:3030/api/v1/clientes \
     "email": "cliente@example.com"
   }'
 ```
+
