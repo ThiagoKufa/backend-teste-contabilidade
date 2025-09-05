@@ -38,3 +38,17 @@ curl -X POST http://localhost:3030/api/v1/clientes \
   }'
 ```
 
+### List Customers
+```bash
+curl -X GET http://localhost:3030/api/v1/clientes
+```
+### Pagination
+```bash
+curl -X GET http://localhost:3030/api/v1/clientes?page=1&limit=10
+```
+### Get Customer by ID
+```bash
+curl -X GET http://localhost:3030/api/v1/clientes/1
+```
+
+
